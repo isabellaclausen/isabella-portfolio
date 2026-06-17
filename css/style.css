@@ -185,12 +185,18 @@ article p {
   margin-top: 40px;
 }
 
-.skill-wrapper span {
+.skill-wrapper a {
   border: 1.5px solid #B11F24;
   color: #B11F24;
   padding: 15px 26px;
   border-radius: 999px;
   font-size: 18px;
+}
+
+.skill-wrapper a:hover {
+    background: #B11F24;
+    color: #f6f1e8;
+    transform: translateY(-3px);
 }
 
 .contact {
