@@ -94,7 +94,7 @@ h2 {
 
 .about-content p {
     font-family: "Cormorant Garamond", serif;
-    font-size: 48px;
+    font-size: 40px;
     line-height: 1.25;
     font-style: italic;
     font-weight: 400;
@@ -212,4 +212,289 @@ article p {
 .contact-info p {
   font-size: 22px;
   margin-bottom: 12px;
+}
+
+/* ABOUT ME PAGE */
+
+.about-page {
+  min-height: 100vh;
+  background: #f6f1e8;
+  padding: 35px 70px 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.back-arrow {
+  position: fixed;
+  top: 30px;
+  left: 35px;
+  font-size: 55px;
+  text-decoration: none;
+  color: #B11F24;
+  z-index: 10;
+}
+
+.about-kicker {
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 7px;
+  margin-bottom: 20px;
+  color: #2b2b2b;
+}
+
+.about-big-title {
+  font-family: "Anton", sans-serif;
+  font-size: 190px;
+  line-height: 0.8;
+  letter-spacing: -5px;
+  color: #B11F24;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-left: -50px;
+  margin-top: 80px;
+}
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 70px;
+  align-items: end;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.about-photo {
+  width: 420px;
+  height: 560px;
+  object-fit: cover;
+}
+
+.about-text-box {
+  max-width: 560px;
+  padding-bottom: 20px;
+}
+
+.about-text-box p {
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.45;
+    max-width: 650px;
+    margin-bottom: 50px;
+}
+
+.about-image-wrapper{
+    position: relative;
+    width: 420px;
+}
+
+.about-photo{
+    width: 420px;
+    height: 560px;
+    object-fit: cover;
+}
+
+.handwritten-overlay{
+    position: absolute;
+
+    top: -200px;
+    left: -10px;
+
+    transform: rotate(-4deg);
+
+    font-family: "Caveat", cursive;
+    font-size: 95px;
+    line-height: 0.8;
+
+    color: #B11F24;
+
+    z-index: 3;
+}
+
+
+/* BUCKET LIST */
+
+.bucket-page {
+    min-height: 100vh;
+    background: #f6f1e8;
+    color: #B11F24;
+    padding: 80px 120px;
+    position: relative;
+}
+
+.bucket-title {
+    font-family: "Caveat", cursive;
+    font-size: 120px;
+    line-height: 0.8;
+    margin-bottom: 50px;
+}
+
+.bucket-title span {
+    display: block;
+    font-size: 55px;
+    margin-left: 180px;
+}
+
+.bucket-items {
+    list-style: none;
+    font-family: "Caveat", cursive;
+    font-size: 42px;
+    color: #B11F24;
+}
+
+.bucket-items li {
+    margin-bottom: 12px;
+}
+
+.bucket-items label {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Gem den rigtige checkbox */
+.bucket-items input[type="checkbox"] {
+    display: none;
+}
+
+/* Tom checkbox */
+.bucket-items label::before {
+    content: "□";
+    color: #B11F24;
+    font-size: 40px;
+    width: 35px;
+    flex-shrink: 0;
+}
+
+/* Når den er checked */
+.bucket-items label:has(input:checked)::before {
+    content: "✓";
+    color: #B11F24;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Streg gennem teksten */
+.bucket-items input:checked + span {
+    text-decoration: line-through;
+    opacity: 0.65;
+}
+
+/* Tilbagepil */
+.back-arrow {
+    position: fixed;
+    top: 30px;
+    left: 35px;
+    font-size: 55px;
+    text-decoration: none;
+    color: #B11F24;
+    z-index: 10;
+}
+
+/* Hover-effekt */
+.bucket-items label:hover {
+    transform: translateX(5px);
+    transition: 0.2s;
+}
+
+
+/* GALLERY PAGE */
+
+.gallery-page {
+  min-height: 100vh;
+  background: #f6f1e8;
+  padding: 70px 90px;
+  color: #B11F24;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.gallery-title {
+  font-family: "Caveat", cursive;
+  font-size: 130px;
+  text-align: center;
+  line-height: 0.8;
+  margin-bottom: 10px;
+}
+
+.gallery-subtitle {
+  font-family: "Caveat", cursive;
+  font-size: 38px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.polaroid-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px 55px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.polaroid {
+  background: #fffaf2;
+  padding: 18px 18px 55px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+  position: relative;
+  transition: 0.3s;
+}
+
+.polaroid:hover {
+  transform: translateY(-8px) rotate(0deg);
+}
+
+.polaroid img {
+  width: 100%;
+  height: 310px;
+  object-fit: cover;
+  display: block;
+}
+
+.polaroid p {
+  font-family: "Caveat", cursive;
+  font-size: 32px;
+  color: #B11F24;
+  margin-top: 14px;
+}
+
+.rotate-left {
+  transform: rotate(-3deg);
+}
+
+.rotate-right {
+  transform: rotate(3deg);
+}
+
+.gallery-note {
+  position: absolute;
+  font-family: "Caveat", cursive;
+  color: #B11F24;
+  font-size: 36px;
+}
+
+.note-one {
+  left: 80px;
+  top: 420px;
+  transform: rotate(-8deg);
+}
+
+.note-two {
+  right: 80px;
+  top: 520px;
+  transform: rotate(6deg);
+}
+
+.back-arrow {
+  position: fixed;
+  top: 30px;
+  left: 35px;
+  font-size: 55px;
+  text-decoration: none;
+  color: #B11F24;
+  z-index: 10;
 }
