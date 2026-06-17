@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f6f1e8;
+  color: #2b2b2b;
+  font-family: Arial, sans-serif;
+}
+
+section {
+  min-height: 100vh;
+  padding: 80px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.intro {
+  font-family: "Caveat", cursive;
+  font-size: 42px;
+  margin-bottom: 25px;
+}
+
+.hero h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 145px;
+  line-height: 0.85;
+  color: #B11F24;
+  font-weight: 600;
+}
+
+.subtitle {
+  margin-top: 30px;
+  font-size: 22px;
+}
+
+.hero-image-wrapper {
+  position: relative;
+  width: 360px;
+  height: 460px;
+  flex-shrink: 0;
+}
+
+.red-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #B11F24;
+  top: 30px;
+  left: 30px;
+}
+
+.hero-image-wrapper img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 2;
+}
+
+.small-text {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 13px;
+  margin-bottom: 15px;
+  color: #B11F24;
+}
+
+h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 100px;
+  line-height: 0.9;
+  color: #B11F24;
+  margin-bottom: 40px;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.about-content {
+  max-width: 650px;
+}
+
+.about-content p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 48px;
+    line-height: 1.25;
+    font-style: italic;
+    font-weight: 400;
+    max-width: 900px;
+}
+
+.heart-section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f6f1e8;
+}
+
+.heart-box {
+  position: relative;
+  width: 750px;
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart-svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.heart-svg path {
+  fill: none;
+  stroke: #B11F24;
+  stroke-width: 4;
+}
+
+.heart-box p {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #B11F24;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 46px;
+  line-height: 1.05;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 60px;
+}
+
+article {
+  background: #fffaf2;
+  padding: 35px;
+  border-radius: 4px;
+  border: 1px solid rgba(177, 31, 36, 0.2);
+}
+
+article h3 {
+  font-family: "Cormorant Garamond", serif;
+  color: #B11F24;
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+article p {
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+}
+
+.skill-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 40px;
+}
+
+.skill-wrapper span {
+  border: 1.5px solid #B11F24;
+  color: #B11F24;
+  padding: 15px 26px;
+  border-radius: 999px;
+  font-size: 18px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact h2 {
+  font-size: 135px;
+}
+
+.contact-info p {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
